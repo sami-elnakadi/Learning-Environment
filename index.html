@@ -2,11 +2,11 @@
 <html>
 
 
-# Le Markdown, comment ça marche?
+<h1> Le Markdown, comment ça marche?</h1>
 
-C'est un petit langage très simple qui permet d'écrire du HTML de façon raccourcie. On peut s'en servir sur certains forums ou pour rédiger des documentations (incontournable sur GitHub).
+<p>C'est un petit langage très simple qui permet d'écrire du HTML de façon raccourcie. On peut s'en servir sur certains forums ou pour rédiger des documentations (incontournable sur GitHub).</p>
 
-Les créateurs de Markdown trouvaient que ce n'était pas vraiment pratique de devoir mettre en forme manuellement des textes en HTML (ou, pire, en bbCode). Imaginez, vous voulez poster un message sur un forum qui accepte uniquement le HTML et vous voulez écrire une liste à puces. Vous allez devoir écrire à la main…
+<p>Les créateurs de Markdown trouvaient que ce n'était pas vraiment pratique de devoir mettre en forme manuellement des textes en HTML (ou, pire, en bbCode). Imaginez, vous voulez poster un message sur un forum qui accepte uniquement le HTML et vous voulez écrire une liste à puces. Vous allez devoir écrire à la main…</p>
 
 ```html
 <ul>
@@ -17,16 +17,16 @@ Les créateurs de Markdown trouvaient que ce n'était pas vraiment pratique de d
 
 ```
 
-… et ça, juste pour faire une liste à puces, il faut avouer que ça devient vite lourdingue !
+<p>… et ça, juste pour faire une liste à puces, il faut avouer que ça devient vite lourdingue !<br>
 
-John Gruber et Aaron Swartz ont donc créé un petit langage très simple appelé le Markdown. L'idée est de pouvoir mettre en forme du texte sans avoir besoin de recourir à la souris… et sans avoir besoin de taper à la main des balises HTML toutes les 5 secondes.
+John Gruber et Aaron Swartz ont donc créé un petit langage très simple appelé le Markdown. L'idée est de pouvoir mettre en forme du texte sans avoir besoin de recourir à la souris… et sans avoir besoin de taper à la main des balises HTML toutes les 5 secondes.<br>
 
-Si vous aussi vous souhaitez mettre en forme vos messages rapidement et proprement, suivez le guide ! Vous aurez appris Markdown avant d'avoir eu le temps de dire « ouf » !
+Si vous aussi vous souhaitez mettre en forme vos messages rapidement et proprement, suivez le guide ! Vous aurez appris Markdown avant d'avoir eu le temps de dire « ouf » !</p>
 
 
-## Liste à puces
+<h2> Liste à puces</h2>
 
-Créer des listes en Markdown est un vrai bonheur, vous allez voir qu'il n'y a rien de plus simple ! Voici la procédure pour créer une liste:
+<p>Créer des listes en Markdown est un vrai bonheur, vous allez voir qu'il n'y a rien de plus simple ! Voici la procédure pour créer une liste:</p>
 
 ```
 * Une puce
@@ -34,40 +34,43 @@ Créer des listes en Markdown est un vrai bonheur, vous allez voir qu'il n'y a r
 * Et encore une autre puce !
 
 ```
-### Résultat
+<h3> Résultat</h3>
+<ul>
+<li>Une puce</li>
+<li>Une autre puce</li>
+<li>Et encore une autre puce !</li>
+</ul>
 
-* Une puce
-* Une autre puce
-* Et encore une autre puce !
 
+<hr>
 
-=======
-## Les listes numérotée.
-Pour créér une liste numérotée (ou liste ordonnée), c'est finalement très intuitif:
-Commencez la ligne par un nombre suivi d'un point. Pour que votre *mardown* soit plus lisible, je vous conseille 
-d’ordonner proprement votre liste. Mais ce n’est pas nécessaire pour le rendu HTML. 
+<h2>Les listes numérotée.</h2>
+<p>Pour créér une liste numérotée (ou liste ordonnée), c'est finalement très intuitif:<br>
+Commencez la ligne par un nombre suivi d'un point. Pour que votre <i>markdown</i> soit plus lisible, je vous conseille 
+d’ordonner proprement votre liste. Mais ce n’est pas nécessaire pour le rendu HTML. <br>
 Comme vous pouvez le voir dans l’export html, la seule différence avec la liste non ordonnée est que 
 la balise englobant les éléments est `ol` et plus `ul`. C’est le navigateur qui se charge d’ajouter les nombres
- pour ordonner la liste.
+ pour ordonner la liste.</p>
 
 ```
 
-
-1. Ceci est un premier élèment.
-2. Ceci est un deuxième élèment.
-98. Ceci est un troisième élèment et ce sera bien le chiffre '3' qui sera pucé au lieu du '98' qui me sert à déclarer ma puce.
-150. Ceci est un dernier élément, et ce sera bien le chiffre '4' qui sera pucé au lieu du '150'
-
+<ul>
+<1i> 1. Ceci est un premier élèment.</1i>
+<li>2. Ceci est un deuxième élèment.</li>
+<li>98. Ceci est un troisième élèment et ce sera bien le chiffre '3' qui sera pucé au lieu du '98' qui me sert à déclarer ma puce.</li>
+<li>150. Ceci est un dernier élément, et ce sera bien le chiffre '4' qui sera pucé au lieu du '150'</li>
+</ul>
 
 ```
-Pour un résultat:
+<p>Pour un résultat:</p>
 
-1. Ceci est un premier élèment.
-2. Ceci est un deuxième élément.
-98. Ceci est un troisème élèment et ce sera bien le chiffre '3' qui sera pucé au lieu du '98' qui me sert à déclarer ma puce.
-150. Ceci est un dernier élèment, et ce sera bien le chiffre '4' qui sera pucé au lieu du '150'.
-
-En langage *HTML*, on utilisera:
+<ul>
+<1i>1. Ceci est un premier élèment.</1i>
+<li>2. Ceci est un deuxième élèment.</li>
+<li>98. Ceci est un troisième élèment et ce sera bien le chiffre '3' qui sera pucé au lieu du '98' qui me sert à déclarer ma puce.</li>
+<li>150. Ceci est un dernier élément, et ce sera bien le chiffre '4' qui sera pucé au lieu du '150'</li>
+</ul>
+<p>En langage *HTML*, on utilisera:</p>
 
 ```
 
@@ -93,75 +96,75 @@ Pour un résultat:
 
 
 
-=======
+<hr>
 
-## Les liens
+<h2> Les liens</h2>
 
-Pour créer un lien, vous devez placer le texte du lien entre crochets suivis de l'URL entre parenthèses :
+<p>Pour créer un lien, vous devez placer le texte du lien entre crochets suivis de l'URL entre parenthèses :</p>
 
-"[TEXTE] (LIENS)"
+<p>"[TEXTE] (LIENS)"</p>
 
-Cela donne:
+<p>Cela donne:</p>
 
-Rendez-vous sur  [Linkedin](https://www.linkedin.com/) pour vous créer un espace professionnel et donner accès à votre profil à vos potentiels futurs employeurs ou collègues !
+<p>Rendez-vous sur <a href="https://www.linkedin.com/">Linkedin</a> pour vous créer un espace professionnel et donner accès à votre profil à vos potentiels futurs employeurs ou collègues !<br>
 
-Cela permet donc d'insérer des liens dans votre texte en Markdown sans recourir au code HTML.
-=======
+Cela permet donc d'insérer des liens dans votre texte en Markdown sans recourir au code HTML.</p>
+<hr>
 
-### [suite de l'article](https://github.com/sami-elnakadi/exercice-markdown/blob/master/markdown2.md) 	
+<h3> <a href="https://github.com/sami-elnakadi/exercice-markdown/blob/master/markdown2.md">Suite de l'article</a>	</h3>
 
-# Les images animées.
+<h1> Les images animées.</h1>
 
-C'est simplement l'extension de l'image qui va changer, au lieu d'avoir une image fixe en jpg/png/..., l'extension
- utilisée sera .gif
-La commande pour afficher cette image est la même que pour afficher une image simple:
-
-```
-
-
-
-![image animée](https://tenor.com/view/fallout76-evil-smile-scheming-plotting-gif-13253745)
-
+<p>C'est simplement l'extension de l'image qui va changer, au lieu d'avoir une image fixe en jpg/png/..., l'extension
+ utilisée sera .gif<br>
+La commande pour afficher cette image est la même que pour afficher une image simple:</p><br>
 
 ```
 
-Pour un résultat:
-
-![image animée](https://tenor.com/view/fallout76-evil-smile-scheming-plotting-gif-13253745)
-=======
 
 
-## Coloration syntaxique
+<p>![image animée](https://tenor.com/view/fallout76-evil-smile-scheming-plotting-gif-13253745)</p>
 
-Ici nous souhaitons colorer la syntaxe d'une ligne de code provenant d'un autre language de programmation.
 
-Partons de ceci: 
+```
+
+<p>Pour un résultat:</p>
+
+<img src="https://tenor.com/view/fallout76-evil-smile-scheming-plotting-gif-13253745">
+
+
+<hr>
+
+
+<h2>Coloration syntaxique</h2>
+
+<p>Ici nous souhaitons colorer la syntaxe d'une ligne de code provenant d'un autre language de programmation.</p>
+
+<p>Partons de ceci: </p>
 
 <script type="text/javascript">
     alert("Hello!");
 </script>
 
 
-Nous pouvons voir que la syntaxe est incolore, et donc peu lisible, voyons maintenant comment rendre la chose plus pratique!
+<p>Nous pouvons voir que la syntaxe est incolore, et donc peu lisible, voyons maintenant comment rendre la chose plus pratique!</p>
 
-Il faut d'abord préciser le type de code utiliser dans l'extrait que nous avons sélectionné.
-Ensuite, nous allons créer une liste ul - li, pour "isoler" ce bout de code du reste.
+<p>Il faut d'abord préciser le type de code utiliser dans l'extrait que nous avons sélectionné.
+Ensuite, nous allons créer une liste ul - li, pour "isoler" ce bout de code du reste.</p>
 
-```html
+<p>```html
 
-	<ul>
-		<li> <script type="text/javascript">
+	<script type="text/javascript">
     alert("Hello!");
 		</script>
-		</li>
-	</ul>
-```
-ou encore en ajoutant 
+		
+```</p>
+<p>ou encore en ajoutant </p>
 
-"``` type de code
+<p>"``` type de code<br>
 
 votre code en commencant chaque ligne par >
-et ferme avec ```
+et ferme avec ```</p>
 
 Ce qui donne ceci: 
 
@@ -171,16 +174,12 @@ Ce qui donne ceci:
 >		</script>
 ```
 
-=======
-## Les images statiques
+<hr>
+<h2> Les images statiques</h2>
 
-Pour afficher l'image, vous devez simplement mettre un point d'exclamation devant les premiers crochets. Ce qui se trouve entre les crochets est le nom de l'image. Puis l'url de l'image se trouve entre parenthèses.
+<p>Pour afficher l'image, vous devez simplement mettre un point d'exclamation devant les premiers crochets. Ce qui se trouve entre les crochets est le nom de l'image. Puis l'url de l'image se trouve entre parenthèses.</p>
 
 ```text
+<img src="https://www.laurasmulders.com/wp-content/uploads/2016/08/M0JJ0v8.png">
 
-![img](https://www.laurasmulders.com/wp-content/uploads/2016/08/M0JJ0v8.png)
-
-```
-![img](https://www.laurasmulders.com/wp-content/uploads/2016/08/M0JJ0v8.png)
-
-### [suite de l'article](https://github.com/sami-elnakadi/exercice-markdown/blob/master/markdown1.md) 
+<h3><a href="https://github.com/sami-elnakadi/exercice-markdown/blob/master/markdown1.md"> Suite de l'article</a> </h3>
